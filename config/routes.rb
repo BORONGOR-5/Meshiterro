@@ -9,5 +9,5 @@ Rails.application.routes.draw do
 # favoritesのshowページが不要で、idの受け渡しも必要ないので、resourceとなっています。
     resources :post_comments, only: [:create, :destroy]
   end
-  resources :users, only: [:show]
+  resources :users, only: [:show, :edit, :update]
 end
